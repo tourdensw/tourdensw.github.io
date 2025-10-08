@@ -41,34 +41,30 @@
 
     <!-- Navigation Bar -->
     <nav class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-6 relative">
             <div class="flex justify-between items-center py-3">
                 <a href="#" class="font-bold text-xl hover:text-gray-300">Tour de NSW</a>
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-2">
-                    <a href="#itinerary" class="py-2 px-3 hover:bg-gray-700 rounded">Itinerary</a>
-                    <a href="#payment" class="py-2 px-3 hover:bg-gray-700 rounded">Payment</a>
-                    <a href="#travel" class="py-2 px-3 hover:bg-gray-700 rounded">Travel</a>
-                    <a href="#accommodation" class="py-2 px-3 hover:bg-gray-700 rounded">Accommodation &amp; Food</a>
-                    <a href="#safety" class="py-2 px-3 hover:bg-gray-700 rounded">Safety</a>
-                    <a href="#training" class="py-2 px-3 hover:bg-gray-700 rounded">Training</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
+                <!-- Burger Menu Button -->
+                <div>
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                     </button>
                 </div>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1">
-            <a href="#itinerary" class="block py-2 px-3 hover:bg-gray-700 rounded">Itinerary</a>
-            <a href="#payment" class="block py-2 px-3 hover:bg-gray-700 rounded">Payment</a>
-            <a href="#travel" class="block py-2 px-3 hover:bg-gray-700 rounded">Travel</a>
-            <a href="#accommodation" class="block py-2 px-3 hover:bg-gray-700 rounded">Accommodation &amp; Food</a>
-            <a href="#safety" class="block py-2 px-3 hover:bg-gray-700 rounded">Safety</a>
-            <a href="#training" class="block py-2 px-3 hover:bg-gray-700 rounded">Training</a>
+             <!-- Collapsible Menu -->
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-800 px-2 pt-2 pb-3 space-y-1">
+                <a href="#itinerary" class="block py-2 px-3 hover:bg-gray-700 rounded">Itinerary</a>
+                <a href="#charity" class="block py-2 px-3 hover:bg-gray-700 rounded">Charity</a>
+                <a href="#training" class="block py-2 px-3 hover:bg-gray-700 rounded">Training</a>
+                <a href="#kit-list" class="block py-2 px-3 hover:bg-gray-700 rounded">Kit List</a>
+                <a href="#bike-info" class="block py-2 px-3 hover:bg-gray-700 rounded">Bike Info</a>
+                <a href="#payment" class="block py-2 px-3 hover:bg-gray-700 rounded">Payment</a>
+                <a href="#travel" class="block py-2 px-3 hover:bg-gray-700 rounded">Travel</a>
+                <a href="#accommodation" class="block py-2 px-3 hover:bg-gray-700 rounded">Accommodation &amp; Food</a>
+                <a href="#safety" class="block py-2 px-3 hover:bg-gray-700 rounded">Safety</a>
+                <a href="#after-party" class="block py-2 px-3 hover:bg-gray-700 rounded">After Party</a>
+                <a href="#contact" class="block py-2 px-3 hover:bg-gray-700 rounded">Contact</a>
+            </div>
         </div>
     </nav>
 
@@ -96,7 +92,7 @@
                         <h3 class="text-2xl font-bold mt-2">Canberra to Goulburn</h3>
                         <p class="text-xl font-semibold mt-1 text-gray-700">114km</p>
                         <p class="mt-4 text-gray-600">We roll out from the capital, leaving city life behind for the open roads of New South Wales. Today's stage is a challenging but rewarding ride through classic Australian countryside, setting the tone for the adventure ahead.</p>
-                        <a href="https://www.relive.com/view/vDqgz83gnV6" target="https://www.relive.com/view/vDqgz83gnV6" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
+                        <a href="https://www.relive.com/view/vDqgz83gnV6" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
                             Preview Route &rarr;
                         </a>
                     </div>
@@ -108,7 +104,7 @@
                         <h3 class="text-2xl font-bold mt-2">Goulburn to Bowral</h3>
                         <p class="text-xl font-semibold mt-1 text-gray-700">88km</p>
                         <p class="mt-4 text-gray-600">A shorter day in the saddle brings us into the heart of the Southern Highlands. We'll pedal through charming villages and picturesque farmland before arriving in the beautiful town of Bowral, known for its stunning gardens and country hospitality.</p>
-                        <a href="https://www.relive.com/view/vrqozWLgoy6" target="https://www.relive.com/view/vrqozWLgoy6" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
+                        <a href="https://www.relive.com/view/vrqozWLgoy6" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
                             Preview Route &rarr;
                         </a>
                     </div>
@@ -120,7 +116,7 @@
                         <h3 class="text-2xl font-bold mt-2">Bowral to Wollongong</h3>
                         <p class="text-xl font-semibold mt-1 text-gray-700">70km Downhill Sprint</p>
                         <p class="mt-4 text-gray-600">Get ready for an exhilarating ride! Today is all about the descent. We leave the highlands behind and enjoy a thrilling downhill run towards the coast, with spectacular views of the ocean opening up before us as we approach Wollongong.</p>
-                        <a href="https://www.relive.com/view/vNOPzA3g7Yq" target="https://www.relive.com/view/vNOPzA3g7Yq" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
+                        <a href="https://www.relive.com/view/vNOPzA3g7Yq" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
                             Preview Route &rarr;
                         </a>
                     </div>
@@ -132,7 +128,7 @@
                         <h3 class="text-2xl font-bold mt-2">Wollongong to Sydney</h3>
                         <p class="text-xl font-semibold mt-1 text-gray-700">90km Queen Stage</p>
                         <p class="mt-4 text-gray-600">The final push, the Queen Stage! We tackle the iconic route through the magnificent Royal National Park. Winding roads, dense forest, and coastal vistas make this a truly world-class ride, finishing in triumph in the heart of Sydney.</p>
-                        <a href="https://www.relive.com/view/vNOPzAQGNYq" target="https://www.relive.com/view/vNOPzAQGNYq" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
+                        <a href="https://www.relive.com/view/vNOPzAQGNYq" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:text-blue-800 transition duration-300">
                             Preview Route &rarr;
                         </a>
                     </div>
@@ -142,6 +138,98 @@
 
         <!-- Collapsible Information Sections -->
         <div class="space-y-4 mt-16 md:mt-24">
+
+            <section id="charity">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Our Chosen Charity</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-700 leading-relaxed">We are proud to be supporting the <strong>Sydney Children's Hospitals Foundation</strong>. Every kilometre we ride and every dollar we raise will help provide all children with access to the best possible healthcare, whenever and wherever they need it.</p>
+                        <p class="mt-4 text-gray-700 leading-relaxed">Fundraising is a key component of this challenge. We ask each rider to do their best to raise money for the SCHF. A dedicated fundraising page will be set up for each participant, making it easy to share your journey and collect donations from friends, family, and colleagues.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="training">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Training Guides</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
+                            <li>Do not underestimate the challenge.</li>
+                            <li>It is recommended that all cyclists should complete a ride local to them with at least 1000m of elevation gain over 100km of cycling.</li>
+                            <li>Strava accounts will be requested for all riders - if you don't have one yet, please create one as organisers will be monitoring training progress.</li>
+                            <li>Regular long distance rides will be organised for participants from Sydney and Perth - be sure to join these to ensure your training is on track.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kit-list">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Essential Kit List</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                        <h4 class="font-bold text-lg mb-2">On The Bike (Mandatory)</h4>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 mb-6">
+                            <li>Roadworthy bike</li>
+                            <li>Cycling helmet (must be worn at all times when riding)</li>
+                            <li>Cycling gloves</li>
+                            <li>Two water bottles (minimum)</li>
+                            <li>Front and rear lights</li>
+                            <li>Small saddle bag with: 2x spare inner tubes, tyre levers, multi-tool</li>
+                            <li>Hi-viz jersey (will be provided)</li>
+                            <li>Padded cycling shorts (bibs recommended)</li>
+                        </ul>
+                         <h4 class="font-bold text-lg mb-2">Off The Bike</h4>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                            <li>Casual clothing for evenings</li>
+                            <li>Toiletries</li>
+                            <li>Sunscreen</li>
+                            <li>Any personal medications</li>
+                            <li>Phone and chargers</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="bike-info">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Bike Information</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
+                            <li>A road bike is highly recommended for this event. Hybrid bikes are acceptable but will be more challenging. Mountain bikes or e-bikes are not permitted for safety reasons.</li>
+                            <li>Please ensure your bike is fully serviced before the event. Check your brakes, gears, and tyres for wear.</li>
+                            <li>There will be long and steep descents on the route - disc brakes are recommended but rim brakes are also okay. Regardless, we ask that all riders take care and remain in full control of their bikes at all times.</li>
+                            <li>Mechanical support will be available, but you should be able to fix a simple puncture yourself. Please carry the necessary spares (tubes, levers, pump/CO2).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+             <section id="bike-hire">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Bike Hire</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                         <p class="text-gray-700 leading-relaxed mb-4">If you are travelling from interstate or overseas, hiring a bike may be a convenient option. There are several excellent bike hire services in Sydney. We recommend booking well in advance. We will post some options here over the next few months.</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <section id="payment">
                 <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
                     <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
@@ -182,8 +270,9 @@
                     </button>
                     <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
                         <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
-                            <li>All meals will be provided starting from the evening of 31 March.</li>
-                            <li>Snacks, energy bars/gels and electrolyte drinks are the responsibility of each individual rider.</li>
+                            <li>All accommodation will be organised for you from the night of 30 March to 2 April (4 nights). Rooms will be twin-share.</li>
+                            <li>All meals will be provided starting from dinner on 30 March through to lunch on 3 April.</li>
+                            <li>Snacks, energy bars/gels and electrolyte drinks are the responsibility of each individual rider. Please bring what you are used to.</li>
                         </ul>
                     </div>
                 </div>
@@ -208,28 +297,49 @@
                             <li>Medical assistance will be available throughout the 4 days.</li>
                             <li>Riders to have minimum two water bottle cages on their bike.</li>
                             <li>Riders to wear suitable cycling attire - i.e. NOT JEANS.</li>
-                            <li>There will be long and steep descents on the route - disc brakes are recommended but rim brakes are also okay. Regardless, we ask that all riders take care and remain in full control of their bikes at all times..</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="after-party">
+                <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
+                    <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">After Party Celebration</h2>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-700 leading-relaxed">Let's celebrate our incredible achievement! After the final stage, we will host an after-party to share stories, celebrate our fundraising success, and enjoy a well-deserved meal together.</p>
+                        <ul class="list-none text-gray-700 leading-relaxed space-y-2 mt-4">
+                            <li><strong>Date:</strong> Saturday, 3 April 2027</li>
+                            <li><strong>Time:</strong> 7:00 PM onwards</li>
+                            <li><strong>Venue:</strong> To be confirmed (central Sydney location)</li>
+                            <li><strong>Details:</strong> A casual evening with food, drinks, and presentations. Partners and family are welcome to join.</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section id="training">
+            <section id="contact">
                 <div class="max-w-4xl mx-auto border-t border-gray-300 pt-6">
                     <button class="w-full flex justify-between items-center text-left focus:outline-none collapsible-trigger">
-                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Training Guides</h2>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Contact Details</h2>
                         <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div class="collapsible-content hidden mt-6 bg-white p-8 rounded-xl shadow-lg">
-                        <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
-                            <li>Do not underestimate the challenge.</li>
-                            <li>It is recommended that all cyclists should complete a ride local to them with at least 1000m of elevation gain over 100km of cycling.</li>
-                            <li>Strava accounts will be requested for all riders - if you don't have one yet, please create one as organisers will be monitoring training progress.</li>
-                            <li>Regular long distance rides will be organised for participants from Sydney and Perth - be sure to join these to ensure your training is on track.</li>
+                        <p class="text-gray-700 leading-relaxed mb-4">For any questions about the ride, please don't hesitate to reach out to the organising committee:</p>
+                        <ul class="list-none text-gray-700 leading-relaxed space-y-3">
+                            <li><strong>Vinod Kerai:</strong> +61 405 088 675</li>
+                            <li><strong>Chet Varsani:</strong> +61 430 179 710</li>
+                            <li><strong>Aanand Pindoria:</strong> +61 449 508 708</li>
+                            <li><strong>Hitesh Pindoria:</strong> +61 405 798 541</li>
+                            <li><strong>General Enquiries:</strong> <a href="mailto:tourdensw@gmail.com" class="text-blue-600 hover:underline">tourdensw@gmail.com</a></li>
+
                         </ul>
                     </div>
                 </div>
             </section>
+
         </div>
 
 
@@ -275,17 +385,18 @@
                     const content = trigger.nextElementSibling;
                     const isOpening = content.classList.contains('hidden');
                     
-                    closeAllCollapsibles();
-
+                    // Don't close all if it's already open and we're just clicking it again to close it
                     if (isOpening) {
-                        content.classList.remove('hidden');
-                        trigger.querySelector('svg').classList.add('rotate-180');
+                         closeAllCollapsibles();
                     }
+
+                    content.classList.toggle('hidden');
+                    trigger.querySelector('svg').classList.toggle('rotate-180');
                 });
             });
             
             navLinks.forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (event) => {
                     const targetId = link.getAttribute('href');
                     if (targetId && targetId.startsWith('#') && targetId.length > 1) {
                         const targetSection = document.querySelector(targetId);
@@ -309,11 +420,4 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
 
